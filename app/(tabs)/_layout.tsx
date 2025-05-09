@@ -21,14 +21,14 @@ const TabIcon=({focused,icon,title}:any)=>{
 
 const _Layout = () => {
   return (
-    <Tabs
-        screenOptions={{
-            tabBarShowLabel:false,
-            tabBarItemStyle:{
-                width:'100%',
-                height:'100%',
-                justifyContent:'center',
-                alignItems:'center'
+      <Tabs
+      screenOptions={{
+          tabBarShowLabel:false,
+          tabBarItemStyle:{
+              width:'100%',
+              height:'100%',
+              justifyContent:'center',
+              alignItems:'center'
             },
             tabBarStyle:{
                 backgroundColor:'#0f0D23',
@@ -42,7 +42,7 @@ const _Layout = () => {
                 borderColor:'#0f0d23'
             }
         }}
-    >
+        >  
       <Tabs.Screen
         name="index"
         options={{
