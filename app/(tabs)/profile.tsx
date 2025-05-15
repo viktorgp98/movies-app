@@ -46,7 +46,7 @@ const Profile = () => {
   return (
     <View className='flex-1 bg-primary items-center justify-center'>
       <Image source={icons.person} className='w-10 h-10'/>
-      <Text className='text-white'>Profile</Text>
+      <Text className='text-white text-md'>Profile</Text>
         {userData && (
           <View>
             <Text>Name: {userData.name}</Text>
@@ -54,7 +54,7 @@ const Profile = () => {
         </View>
         )}
       <Pressable onPress={()=>router.push('/Register')}>
-                        <Text className='text-white'>Don't have an account yet? <Text>Create an account</Text></Text>
+                        <Text className='text-white text-sm'>Don't have an account yet? <Text>Create an account</Text></Text>
                       </Pressable>
     </View>
   )
